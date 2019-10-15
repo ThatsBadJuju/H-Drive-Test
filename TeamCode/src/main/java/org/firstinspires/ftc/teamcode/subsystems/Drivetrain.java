@@ -20,8 +20,8 @@ public class Drivetrain {
         float speed = gamepad.left_stick_y * -1;
         float direction = gamepad.left_stick_x;
 
-        float leftDrivePower = speed - direction;
-        float rightDrivePower = speed + direction;
+        float leftDrivePower = speed + direction;
+        float rightDrivePower = speed - direction;
 
         leftDrivePower = Range.clip(leftDrivePower, -1, 1);
         rightDrivePower = Range.clip(rightDrivePower, -1, 1);
